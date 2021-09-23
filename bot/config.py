@@ -1,10 +1,10 @@
 class config:
-    BOT_TOKEN = ""
-    APP_ID = ""
-    API_HASH = ""
-    DATABASE_URL = ""
-    SUDO_USERS = "" # Sepearted by space.
-    SUPPORT_CHAT_LINK = ""
+    BOT_TOKEN = "1400139092:AAHFscX6W9xMOBSu5zpwQoZGTBQzEIbLJUA"
+    APP_ID = "3595843"
+    API_HASH = "559064540b250f8de03a7909479b19a8"
+    DATABASE_URL = "postgres://pasdgvornnzdhh:e1c293f9388420d9eab7991da7fd66306b34086440aa78bde1f5195bf179016f@ec2-52-211-158-144.eu-west-1.compute.amazonaws.com:5432/danjht5bdnggt1"
+    SUDO_USERS = "1366555127 993968537 1110352454 817434177" # Sepearted by space.
+    SUPPORT_CHAT_LINK = "https://t.me/fateverse"
     DOWNLOAD_DIRECTORY = "./downloads/"
     G_DRIVE_CLIENT_ID = ""
     G_DRIVE_CLIENT_SECRET = ""
