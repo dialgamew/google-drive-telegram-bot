@@ -4,7 +4,7 @@ from bot.helpers.gdrive_utils import GoogleDrive
 from bot.helpers.utils import CustomFilters
 from bot import LOGGER
 
-@Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.Delete) & CustomFilters.sudo_users)
+@Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.Delete) & CustomFilters.SUDO_USERS)
 def _delete(client, message):
   user_id = message.from_user.id
   if len(message.command) > 1 or message.reply_to_message:
@@ -23,7 +23,7 @@ def _delete(client, message):
     message.reply_text(Messages.PROVIDE_GDRIVE_URL.format(BotCommands.Delete[0]), quote=True)
 
 
-@Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.EmptyTrash) & CustomFilters.sudo_users)
+@Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.EmptyTrash) & CustomFilters.SUDO_USERS)
 def _emptyTrash(client, message):
   user_id = message.from_user.id
   LOGGER.info(f'EmptyTrash: {user_id}')
