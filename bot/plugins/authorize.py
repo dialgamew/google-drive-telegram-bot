@@ -47,7 +47,7 @@ async def _auth(client, message):
     except Exception as e:
       await message.reply_text(f"**ERROR:** ```{e}```", quote=True)
 
-@Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.Revoke) & CustomFilters.sudo_users)
+@Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.Revoke) & CustomFilters.SUDO_USERS)
 def _revoke(client, message):
   user_id = message.from_user.id
   try:
@@ -58,7 +58,7 @@ def _revoke(client, message):
     message.reply_text(f"**ERROR:** ```{e}```", quote=True)
 
 
-@Client.on_message(filters.private & filters.incoming & filters.text & ~CustomFilters.sudo_users)
+@Client.on_message(filters.private & filters.incoming & filters.text & ~CustomFilters.SUDO_USERS)
 async def _token(client, message):
   token = message.text.split()[-1]
   WORD = len(token)
