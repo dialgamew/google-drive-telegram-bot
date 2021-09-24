@@ -2,6 +2,7 @@ from bot import SUPPORT_CHAT_LINK
 from pyrogram import Client, filters
 from bot.config import Messages as tr
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from bot import SUDO_USERS
 
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']) & filters.user(SUDO_USERS), group=2)
