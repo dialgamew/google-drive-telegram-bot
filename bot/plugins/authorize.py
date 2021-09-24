@@ -11,6 +11,7 @@ from googleapiclient.errors import HttpError
 from bot.helpers.sql_helper import gDriveDB
 from bot.config import BotCommands
 from bot.helpers.utils import CustomFilters
+from bot import SUDO_USERS
 
 
 OAUTH_SCOPE = "https://www.googleapis.com/auth/drive"
