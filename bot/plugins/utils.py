@@ -31,3 +31,4 @@ def _restart(client, message):
   message.reply_text('**♻️Restarted Successfully !**', quote=True)
   LOGGER.info(f'{message.from_user.id}: Restarting...')
   execl(executable, executable, "-m", "bot")
+  
