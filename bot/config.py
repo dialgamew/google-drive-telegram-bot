@@ -2,7 +2,7 @@ class config:
     BOT_TOKEN = "1293012912:AAFwr1IOxp5tSlvbqQYIyGQ3dxlvKvxIs1k"
     APP_ID = "3595843"
     API_HASH = "559064540b250f8de03a7909479b19a8"
-    DATABASE_URL = "postgres://pasdgvornnzdhh:e1c293f9388420d9eab7991da7fd66306b34086440aa78bde1f5195bf179016f@ec2-52-211-158-144.eu-west-1.compute.amazonaws.com:5432/danjht5bdnggt1"
+    DATABASE_URL = "postgres://wfzsbfshultzdf:e801e8deb5c9a37e121427c08adc7a9cd9dc0d038380889bf22bd2a375eb6074@ec2-54-220-195-236.eu-west-1.compute.amazonaws.com:5432/dulmmhed9s6r5"
     SUDO_USERS = "1366555127 993968537 1110352454 817434177" # Sepearted by space.
     SUPPORT_CHAT_LINK = "https://t.me/fateverse"
     DOWNLOAD_DIRECTORY = "./downloads/"
