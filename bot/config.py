@@ -6,8 +6,8 @@ class config:
     SUDO_USERS = "1366555127 993968537 1110352454 817434177" # Sepearted by space.
     SUPPORT_CHAT_LINK = "https://t.me/fateverse"
     DOWNLOAD_DIRECTORY = "./downloads/"
-    G_DRIVE_CLIENT_ID = "326143966364-ithf75me2ji6vlqb8taher4r2tbn79pc.apps.googleusercontent.com"
-    G_DRIVE_CLIENT_SECRET = "Ab63IEFbawZA4nICo58z9j4N"
+    G_DRIVE_CLIENT_ID = "202264815644.apps.googleusercontent.com"
+    G_DRIVE_CLIENT_SECRET = "X4Z3ca8xfWDb1Voo-F9a7ZxJ"
 
 
 class BotCommands:
