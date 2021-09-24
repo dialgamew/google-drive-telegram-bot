@@ -4,7 +4,7 @@ from bot.helpers.utils import CustomFilters
 from bot.helpers.gdrive_utils import GoogleDrive
 from bot import LOGGER
 
-@Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.Clone) & CustomFilters.sudo_users)
+@Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.Clone) & CustomFilters.SUDO_USERS)
 def _clone(client, message):
   user_id = message.from_user.id
   if len(message.command) > 1:
