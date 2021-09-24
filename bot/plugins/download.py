@@ -46,7 +46,7 @@ def _download(client, message):
         sent_message.edit(Messages.DOWNLOAD_ERROR.format(file_path, link))
 
 
-@Client.on_message(filters.private & filters.incoming & (filters.document | filters.audio | filters.video | filters.photo) & CustomFilters.sudo_users)
+@Client.on_message(filters.private & filters.incoming & (filters.document | filters.audio | filters.video | filters.photo) & CustomFilters.SUDO_USERS)
 def _telegram_file(client, message):
   user_id = message.from_user.id
   sent_message = message.reply_text('🕵️**Checking File...**', quote=True)
@@ -72,7 +72,7 @@ def _telegram_file(client, message):
   LOGGER.info(f'Deleteing: {file_path}')
   os.remove(file_path)
 
-@Client.on_message(filters.incoming & filters.private & filters.command(BotCommands.YtDl) & CustomFilters.sudo_users)
+@Client.on_message(filters.incoming & filters.private & filters.command(BotCommands.YtDl) & CustomFilters.SUDO_USERS)
 def _ytdl(client, message):
   user_id = message.from_user.id
   if len(message.command) > 1:
@@ -91,3 +91,4 @@ def _ytdl(client, message):
       sent_message.edit(Messages.DOWNLOAD_ERROR.format(file_path, link))
   else:
     message.reply_text(Messages.PROVIDE_YTDL_LINK, quote=True)
+
